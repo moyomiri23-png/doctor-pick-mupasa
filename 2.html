@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doctor Pick Mupasa | Quality Digging Tools</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f6f0;
+    color: #302719;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: #302719;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e6b84b;
+}
+
+.logo span {
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e6b84b;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(120deg, #302719, #5c4525);
+    color: white;
+    padding: 85px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h4 {
+    color: #e6b84b;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #e6b84b;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #eee5d5;
+    margin-bottom: 28px;
+}
+
+.hero-image {
+    font-size: 140px;
+}
+
+.btn {
+    display: inline-block;
+    background: #dca92f;
+    color: #302719;
+    padding: 14px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f0c75d;
+    transform: translateY(-2px);
+}
+
+/* FEATURES */
+
+.features {
+    padding: 45px 7%;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.feature {
+    padding: 20px;
+}
+
+.feature .icon {
+    font-size: 42px;
+}
+
+.feature h3 {
+    color: #5c4525;
+    margin: 10px 0;
+}
+
+/* PRODUCTS */
+
+.products {
+    padding: 65px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h4 {
+    color: #a67c18;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #302719;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #00000010;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    min-height: 190px;
+    background: #eee8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-info h3 {
+    color: #5c4525;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #6e675b;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #a67c18;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-info button {
+    width: 100%;
+}
+
+/* ABOUT */
+
+.about {
+    background: #e9e3d3;
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #5c4525;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 60px 7%;
+    text-align: center;
+    background: white;
+}
+
+.contact h2 {
+    color: #5c4525;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #302719;
+    color: white;
+    padding: 30px 7%;
+    text-align: center;
+}
+
+footer p {
+    color: #d7cbb5;
+    margin: 8px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 850px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero-image {
+        font-size: 90px;
+        width: 100%;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">
+        DOCTOR PICK <span>MUPASA</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Our Tools</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h4>Strong Tools. Strong Foundations.</h4>
+
+        <h1>
+            Quality Pickaxes &<br>
+            <span>Digging Hoes</span>
+        </h1>
+
+        <p>
+            Welcome to Doctor Pick Mupasa — your trusted
+            supplier of durable digging tools for farming,
+            mining, construction, and everyday work.
+        </p>
+
+        <a href="#products" class="btn">
+            Explore Our Tools →
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        ⛏️
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="feature">
+        <div class="icon">🔨</div>
+
+        <h3>Strong & Durable</h3>
+
+        <p>
+            Reliable digging tools designed for demanding work.
+        </p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">🌱</div>
+
+        <h3>Farming & Agriculture</h3>
+
+        <p>
+            Tools for farmers, gardeners, and agricultural projects.
+        </p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">⛏️</div>
+
+        <h3>Mining & Construction</h3>
+
+        <p>
+            Quality tools for digging, breaking, and groundwork.
+        </p>
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+    <div class="section-title">
+        <h4>OUR PRODUCTS</h4>
+
+        <h2>Tools Built for Hard Work</h2>
+
+        <p>
+            Explore our range of digging tools.
+        </p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <div class="product-image">⛏️</div>
+
+            <div class="product-info">
+
+                <h3>Heavy Duty Pickaxe</h3>
+
+                <p>
+                    Strong pickaxe for mining, rock breaking,
+                    and tough ground.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Heavy Duty Pickaxe')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image">🪓</div>
+
+            <div class="product-info">
+
+                <h3>Agricultural Hoe</h3>
+
+                <p>
+                    Suitable for farming, weeding,
+                    and preparing land.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Agricultural Hoe')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image">🔨</div>
+
+            <div class="product-info">
+
+                <h3>Double Head Pick</h3>
+
+                <p>
+                    Versatile digging tool for construction
+                    and heavy-duty work.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Double Head Pick')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image">🌱</div>
+
+            <div class="product-info">
+
+                <h3>Garden Hoe</h3>
+
+                <p>
+                    A practical tool for gardening,
+                    soil preparation, and weeding.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Garden Hoe')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image">🛠️</div>
+
+            <div class="product-info">
+
+                <h3>Pickaxe Handle</h3>
+
+                <p>
+                    Replacement handles for pickaxes
+                    and digging tools.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Pickaxe Handle')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image">🪵</div>
+
+            <div class="product-info">
+
+                <h3>Hoe Handle</h3>
+
+                <p>
+                    Durable handles for farming and
+                    gardening hoes.
+                </p>
+
+                <div class="price">Contact for Price</div>
+
+                <button class="btn"
+                    onclick="orderProduct('Hoe Handle')">
+                    Order Now
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <h2>About Doctor Pick Mupasa</h2>
+
+    <p>
+        Doctor Pick Mupasa is a digging tools enterprise
+        dedicated to supplying quality pickaxes, hoes,
+        and related tools. We serve farmers, miners,
+        construction workers, gardeners, and individuals
+        who need dependable equipment for hard work.
+        Our mission is to provide strong tools,
+        reliable service, and value for every customer.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2>Need Quality Digging Tools?</h2>
+
+    <p>
+        Contact Doctor Pick Mupasa today for product
+        availability, prices, and orders.
+    </p>
+
+    <a href="https://wa.me/263771234567"
+       class="btn"
+       target="_blank">
+
+        Contact Us on WhatsApp
+
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>DOCTOR PICK MUPASA</h2>
+
+    <p>Strong Tools. Strong Foundations.</p>
+
+    <p>
+        Pickaxes | Hoes | Farming Tools | Mining Tools
+    </p>
+
+    <p>
+        © 2026 Doctor Pick Mupasa. All rights reserved.
+    </p>
+
+</footer>
+
+<script>
+
+function orderProduct(productName) {
+
+    let phone = "263771234567";
+
+    let message =
+        "Hello Doctor Pick Mupasa! I am interested in buying " +
+        productName +
+        ". Please send me the price and availability.";
+
+    let url =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
